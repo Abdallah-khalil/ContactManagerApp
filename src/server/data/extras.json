@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Wes Harris",
+    "address": "289 Porter Crossing, Silver Spring, MD 20918",
+    "phone": "(862) 149-8084",
+    "photoUrl": "/profiles/wes-harrris.jpg"
+  },
+  {
+    "name": "David Crawford",
+    "address": "89318 Heffernan Crossing, Santa Barbara, CA 93150",
+    "phone": "(753) 570-4058",
+    "photoUrl": "/profiles/david-crawford.jpg"
+  },
+  {
+    "name": "Diane Johnston",
+    "address": "419 Tennyson Court, San Luis Obispo, CA 93407",
+    "phone": "(397) 900-7024",
+    "photoUrl": "/profiles/diane-johnston.jpg"
+  }
+]

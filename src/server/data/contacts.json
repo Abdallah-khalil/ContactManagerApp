@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Jennifer Mendoza",
+    "address": "91955 Mosinee Parkway, Indianapolis, IN 46278",
+    "phone": "(314) 291-6958",
+    "photoUrl": "/profiles/jennifer-mendoza.jpg"
+  },
+  {
+    "name": "Eric Ortiz",
+    "address": "62 Warner Place, Washington, DC 20525",
+    "phone": "(902) 758-7304",
+    "photoUrl": "/profiles/eric-ortiz.jpg"
+  },
+  {
+    "name": "Phyllis Wu",
+    "address": "88 Burning Wood Junction, Anaheim, CA 92812",
+    "phone": "(255) 146-6886",
+    "photoUrl": "/profiles/phyllis-wu.jpg"
+  },
+  {
+    "name": "Andrea Shaw",
+    "address": "229 Golden Leaf Road, Gadsden, AL 35905",
+    "phone": "(417) 210-7652",
+    "photoUrl": "/profiles/andrea-shaw.jpg"
+  },
+  {
+    "name": "George Carter",
+    "address": "6502 Montana Junction, New Orleans, LA 70174",
+    "phone": "(995) 113-1620",
+    "photoUrl": "/profiles/george-carter.jpg"
+  },
+  {
+    "name": "Anna Williams",
+    "address": "58034 Nelson Street, Washington, DC 20036",
+    "phone": "(527) 653-2676",
+    "photoUrl": "/profiles/anna-williams.jpg"
+  },
+  {
+    "name": "Alice Chavez",
+    "address": "6 Granby Drive, Topeka, KS 66606",
+    "phone": "(432) 421-3267",
+    "photoUrl": "/profiles/alice-chavez.jpg"
+  },
+  {
+    "name": "Willie Stiles",
+    "address": "3409 Oriole Point, Peoria, IL 61629",
+    "phone": "(218) 696-2526",
+    "photoUrl": "/profiles/willie-stiles.jpg"
+  },
+  {
+    "name": "Sandra Kim",
+    "address": "609 Everett Avenue, Des Moines, IA 50330",
+    "phone": "(650) 549-3249",
+    "photoUrl": "/profiles/sandra-kim.jpg"
+  },
+  {
+    "name": "Vihaan Patel",
+    "address": "3061 Sachs Lane, Scottsdale, AZ 85255",
+    "phone": "(726) 698-7401",
+    "photoUrl": "/profiles/vihaan-patel.jpg"
+  },
+  {
+    "name": "Michelle Caster",
+    "address": "710 Old Gate Circle, Chicago, IL 60641",
+    "phone": "(145) 449-3473",
+    "photoUrl": "/profiles/michelle-caster.jpg"
+  },
+  {
+    "name": "Carl Murray",
+    "address": "0864 Bluestem Center, Sacramento, CA 95823",
+    "phone": "(462) 542-2378",
+    "photoUrl": "/profiles/carl-murray.jpg"
+  }
+]
