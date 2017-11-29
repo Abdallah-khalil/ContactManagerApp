@@ -23,10 +23,10 @@ export const ContactSchema = new Schema({
     address: {
         type: String
     },
-    Phone: {
+    phone: {
         type: String
     },
-    PhotoUrl: {
+    photoUrl: {
         type: String
     }
 });

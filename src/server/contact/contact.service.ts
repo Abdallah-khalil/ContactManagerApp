@@ -3,7 +3,7 @@ import { Component, Inject } from '@nestjs/common';
 import { Contact, AddContactDTO } from './contact.schema';
 import { inject } from '@angular/core/testing';
 import { SecretKeysComponent } from '../common/secretKeys.service';
-import { Module } from '@nestjs/core/injector/module';
+
 
 @Component()
 export class ContactServiceComponent {
