@@ -19,7 +19,6 @@ export class AddContactComponent implements OnInit {
   onSubmit(form: NgForm): void {
     this.loading = true;
     const formValues = Object.assign({}, form.value);
-    debugger;
     const contact: Contact = {
       name: `${formValues.firstName} ${formValues.lastName}`,
       address: formValues.address,

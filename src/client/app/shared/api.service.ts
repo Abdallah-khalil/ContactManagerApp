@@ -6,13 +6,13 @@ import { NgForm } from '@angular/forms';
 import { Contact } from '../shared/contact.model';
 import { environment } from '../../environments/environment';
 import { Observable } from 'rxjs/Observable';
-
+import { AuthService } from './auth.service';
 @Injectable()
 export class ApiService {
- 
+
   private baseUrl: string = environment.apiUrl;
 
-  constructor(private http: Http) { }
+  constructor(private http: Http, private authService: AuthService) { }
 
   get(url: string): Observable<Contact[]> {
     return this.request(url, RequestMethod.Get);
@@ -33,7 +33,7 @@ export class ApiService {
   request(url: string, method: RequestMethod, body?: Object): Observable<any> {
     const headers = new Headers();
     headers.append('Content-type', 'application/json');
-
+    headers.append('Authorization', `Bearer ${this.authService.getToken()}`);
     const requestOptions = new RequestOptions({
       url: `${this.baseUrl}/${url}`,
       headers: headers,
@@ -58,7 +58,7 @@ export class ApiService {
       body
     };
 
-   return Observable.throw(error);
+    return Observable.throw(error);
   }
 
 }

@@ -8,7 +8,7 @@ import { SecretKeysComponent } from '../common/secretKeys.service';
 @Component()
 export class ContactServiceComponent {
 
-    constructor( @Inject(new SecretKeysComponent().getContactToken()) private readonly contactModel: Model<Contact>) {
+    constructor( @Inject(new SecretKeysComponent().getProvToken().contact) private readonly contactModel: Model<Contact>) {
 
     }
 

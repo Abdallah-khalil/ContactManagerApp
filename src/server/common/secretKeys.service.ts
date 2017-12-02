@@ -5,6 +5,7 @@ export class SecretKeysComponent {
 
     private databaseConToken: string;
     private contactToken: string;
+    private userToken: string;
 
     private googleClientID: string;
     private googleClientSecret: string;
@@ -19,7 +20,7 @@ export class SecretKeysComponent {
     constructor() {
         this.databaseConToken = 'DBToken';
         this.contactToken = 'ContactToken';
-
+        this.userToken = 'UserToken';
         this.googleClientID = '749598100296-43vrlaeuikdbgo43r4piadf6cujfso5v.apps.googleusercontent.com';
         this.googleClientSecret = 'NyrfQE8zpd8P6FEkNVL4pozQ';
 
@@ -56,7 +57,10 @@ export class SecretKeysComponent {
         return this.databaseConToken;
     }
 
-    getContactToken(): string {
-        return this.contactToken;
+    getProvToken(): any {
+        return {
+            contact: this.contactToken,
+            user: this.userToken
+        };
     }
 }
