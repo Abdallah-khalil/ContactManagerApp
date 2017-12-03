@@ -1,5 +1,5 @@
 <div class="login-container">
-  <form class="ui big form" #loginForm (submit)="onSubmit(loginForm)">
+  <form class="ui big form" #loginForm="ngForm" (submit)="onSubmit(loginForm)">
     <div class="field">
       <label for="username">Username</label>
       <input type="text" name="username" placeholder="Username" ngModel>
@@ -8,7 +8,7 @@
       <label for="password">Password</label>
       <input type="password" name="password" placeholder="Password" ngModel>
     </div>
-    <button class="ui primary button float right floated">
+    <button type="submit"class="ui primary button float right floated">
       Login
     </button>
   </form>

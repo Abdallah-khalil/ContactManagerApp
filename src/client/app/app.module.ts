@@ -12,6 +12,7 @@ import { AddContactComponent } from './add-contact/add-contact.component';
 import { ApiService } from './shared/api.service';
 import { AuthService } from './shared/auth.service';
 import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './auth.guard';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { LoginComponent } from './login/login.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [ApiService, AuthService],
+  providers: [ApiService, AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -8,11 +8,15 @@
     <div class="header item">
       <h1>Contact Manager</h1>
     </div>
+    <div class="item" *ngIf="authService.isLoggedIn()">
+      <button [routerLink]="['/new']" class="ui basic button" > 
+      <i class="add user icon" aria-hidden="true"></i>
+      Add Contact
+    </button>
+    </div>
+    <div class="right menu">
+      <button class="ui primary button logout" (click)="logout()" *ngIf="authService.isLoggedIn()">Logout</button>
+    </div>
   </div>
-  <div class="item">
-    <button [routerLink]="['/new']" class="ui basic button">
-    <i class="add user icon" aria-hidden="true"></i>
-    Add Contact
-  </button>
-  </div>
+ 
 </div>

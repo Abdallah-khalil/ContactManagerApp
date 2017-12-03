@@ -14,11 +14,13 @@ export class LoginComponent implements OnInit {
   constructor(private apiService: ApiService, private authService: AuthService, private router: Router) { }
 
   ngOnInit() {
+    if (this.authService.isLoggedIn()) {
+      this.router.navigate(['/contacts']);
+    }
   }
 
   onSubmit(form: NgForm): void {
     const values = form.value;
-    debugger;
     const payload = {
       username: values.username,
       password: values.password

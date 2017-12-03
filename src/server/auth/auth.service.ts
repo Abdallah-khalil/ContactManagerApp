@@ -9,13 +9,14 @@ import { User } from '../user/user.schema';
 export class AuthService {
     constructor() { }
 
-    async createToken(user: User): Promise<any> {
+    public createToken(user: User): any {
         const expiresIn = '48h', secretOrKey = process.env.JWT_SWECRET;
         const Payload = { username: user.username, admin: user.admin };
-        const token = sign(user, secretOrKey, { expiresIn });
+        const token = sign(Payload, secretOrKey, { expiresIn });
         return {
-            expiresIn,
-            token,
+            message: 'Success',
+            token: token,
+            expiresIn: expiresIn
         };
     }
 

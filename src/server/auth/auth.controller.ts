@@ -16,19 +16,14 @@ export class AuthController {
                     message: 'User Not Found'
                 });
             }
-
             if (!compareSync(reqBody.password, user.password)) {
                 res.status(HttpStatus.BAD_REQUEST).json({
-                    message: 'Password MisMatch'
+                    message: 'Error in Username or Password'
                 });
             } else {
-                this.authService.createToken(user).then(response => {
-                    return res.json({
-                        message: 'Success',
-                        token: response.token,
-                        expiresIn: response.expiresIn
-                    });
-                });
+                return res.json(
+                    this.authService.createToken(user)
+                );
             }
         });
     }
